@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>MBTA Subway Tracker</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="tracker.js"></script>
+  </head>
+  <body onload="start()">
+    <h1>Real-Time MBTA Subway Tracker</h1>
+    <h3 id="dateTime">Current date & time: </h3>
+    <div id="buttons">
+      <button id="smaller">Smaller</button>
+      <button id="bigger">Bigger</button>
+    </div>
+    <div id="tracker">
+      <canvas id="subways"></canvas>
+      <img id="map" src="fullMap.png" width="1500" height="1800">
+    </div>
+  </body>
+</html>

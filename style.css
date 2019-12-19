@@ -1,0 +1,50 @@
+body {
+  font-family: 'lato', 'oxygen', 'open sans';
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+button {
+  font: 1.1em 'lato', sans-serif;
+  width: 100px;
+  height: 50px;
+  background: white;
+  border: 2px solid black;
+  transition: background 0.5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  color: white;
+  background: grey;
+  cursor: pointer;
+}
+
+button:active {
+  color: white;
+  transition: background 0s ease-in-out;
+  -webkit-transition: background 0s ease-in-out;
+  background: black;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#tracker {
+  display: inline-block;
+  position: relative;
+}
+
+#subways {
+  position: absolute;
+  z-index: 2;
+}
+
+#map {
+  position: absolute;
+  z-index: 1;
+}
